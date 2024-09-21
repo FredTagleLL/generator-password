@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="currentColor">
+    <!-- Contorno del primer rectángulo -->
+    <rect x="9" y="9" width="11" height="13" rx="2" ry="2" stroke="currentColor" stroke-width="2" fill="none"/>
+    <!-- Contorno del segundo rectángulo -->
+    <rect x="5" y="5" width="11" height="13" rx="2" ry="2" stroke="currentColor" stroke-width="2" fill="none"/>
+</svg>

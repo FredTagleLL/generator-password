@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    <main>
+        <div id="hola" class="pepe"></div>
+        <div class="container">
+            <h1 class="title">Generador de Contraseña</h1>
+            <div class="result"><textarea name="result" id="txtResult"  ></textarea><button onclick="copiar()" id="copiar"><img src="img/copiar.svg" alt="copiar" title="copiar"></button>
+            <button onclick="restart()" id="restart"><img src="img/restart.svg" alt="restart" title="restart" ></button></div>
+            <div class="form" >
+                <fieldset class="form__length" >
+                    <legend class="form__legend">LONGITUD DE CARACTERES <span id="form__length-result">12</span></legend>
+                    <div class="form__length-box"><span class="form__length-min">6</span><input class="form__length-range" type="range" name="charLength" id="charlenght" min="6" max="20" value="6"><span class="form__length-max">20</span></div>
+                </fieldset>
+                <fieldset class="form__settings">
+                    <legend class="form__settings-legend">OPCIONES</legend>
+                    <div class="form__settings__box">
+                        <p class="form__settings-parrafo">Incluye letras mayúsculas</p>
+                        <input class="slice" type="checkbox" name="uppercase" id="uppercase">
+                        <label class="form__settings-slice" for="uppercase"></label>
+                    </div>
+                    <div class="form__settings__box">
+                        <p class="form__settings-parrafo">Incluye letras minúsculas</p>
+                        <input class="slice" type="checkbox" checked name="lowercase" id="lowercase">
+                        <label class="form__settings-slice" for="lowercase"></label>
+                    </div>
+                    <div class="form__settings__box">
+                        <p class="form__settings-parrafo">Incluye números</p>
+                        <input class="slice" type="checkbox" name="numbers" id="numbers">
+                        <label class="form__settings-slice" for="numbers"></label>
+                    </div>
+                    <div class="form__settings__box">
+                        <p class="form__settings-parrafo">Incluye símbolos</p>
+                        <input class="slice" type="checkbox" name="symbols" id="symbols">
+                        <label class="form__settings-slice" for="symbols"></label>
+                    </div>
+                </fieldset>
+                <button onclick="generator()" class="form__button">Generar Contraseña</button>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
