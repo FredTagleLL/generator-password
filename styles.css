@@ -33,9 +33,10 @@ fieldset{
 }
 
 .container{
+    overflow-y:auto;
     max-width: 350px;
     width: 90%;
-    height: auto;
+    height:auto;
     display: flex;
     flex-direction: column;
     gap: 2rem;
